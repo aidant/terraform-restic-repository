@@ -13,6 +13,6 @@ terraform {
 }
 
 module "restic_repository" {
-  source  = "github.com/aidant/terraform-restic-repository"
+  source = "github.com/aidant/terraform-restic-repository"
 }
 ```
