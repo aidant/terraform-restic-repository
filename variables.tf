@@ -7,3 +7,9 @@ variable "name" {
     error_message = "The \"name\" variable is required and expected to be a string."
   }
 }
+
+variable "force_destroy" {
+  type        = bool
+  default     = false
+  description = "Whether to force destroy resources."
+}

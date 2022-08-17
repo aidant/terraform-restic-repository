@@ -13,6 +13,8 @@ resource "random_password" "restic_password" {
 
 resource "aws_s3_bucket" "restic_repository" {
   bucket = var.name
+
+  force_destroy = var.force_destroy
 }
 
 data "aws_iam_policy_document" "restic_repository_access" {
